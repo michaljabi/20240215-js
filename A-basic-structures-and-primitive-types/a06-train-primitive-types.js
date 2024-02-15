@@ -28,12 +28,14 @@ const almostWorld = 'Almost World';
 	So that the text "Hello World" appears on the console
 	use the appropriate built-in method on the almostWorld (!) constant
 */
+console.log(hello + almostWorld.substring(6))
+console.log(hello + almostWorld.slice(6))
 
 
 //------------------------------------------------------------
-const isAnAdmin = true; // 4.2 you can change the code only in this line
+let isAnAdmin = true; // 4.2 you can change the code only in this line
 console.log(isAnAdmin)
-// isAnAdmin = false; // 4.1 uncomment this line before start !
+isAnAdmin = false; // 4.1 uncomment this line before start !
 console.log(isAnAdmin)
 
 // # 4 The task
