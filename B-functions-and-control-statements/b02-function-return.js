@@ -3,13 +3,17 @@
  * after being executed you can receive a value from the function.
  */
 
-let weather = 'windy'
+let weather = 'sunny'
 
 // Declaration:
 function giveMeTheName() {
 	// Function can return only one thing at a time:
 	if(weather === 'windy') {
 		return 'Kend\nra\'s'
+	}
+	if(weather === 'sunny') {
+		console.log('!')
+		return;
 	}
 	return {
 		name: 'John',
