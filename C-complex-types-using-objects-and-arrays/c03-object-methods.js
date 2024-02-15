@@ -23,7 +23,7 @@ const cat = {
 
 // #1 Task:
 // Show the voice method output on the console
-
+console.log(cat.voice())
 
 
 

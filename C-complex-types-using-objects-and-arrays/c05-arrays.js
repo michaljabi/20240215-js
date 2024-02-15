@@ -13,7 +13,13 @@
  * */
 
 // Array example:
-const mutableArray = [ 'a', 'b', 'c', 'd' ];
+const mutableArray = ['a', 'b', 'c', 'd'];
+
+// mutableArray = [];
+
+mutableArray.push('hello')
+
+mutableArray //=
 
 // Check the length of the array
 console.log(mutableArray.length);
@@ -22,16 +28,16 @@ console.log(mutableArray.length);
 console.log(mutableArray[2]);
 
 // Modify an array element at a specific index:
-mutableArray[2] = 'x'
+// mutableArray[2] = 'x'
 
 // This is a collection that can be iterated.
 // Both with a for loop
-for(let x = 0; x < mutableArray.length; x++) {
+for (let x = 0; x < mutableArray.length; x+=2) {
 	// then we refer to indexes of the array:
 	console.log(mutableArray[x]);
 }
 // and the "for of" loop
-for(const element of mutableArray) {
+for (const element of mutableArray) {
 	console.log(element);
 }
 // and the built-in forEach method + callback here:
@@ -43,13 +49,25 @@ mutableArray.forEach(element => {
 // More ? check: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype
 
 // add element (s) to the end:
-mutableArray.push( 'e', 'f', 'g' );
+mutableArray.push('e', 'f', 'g');
+console.log(mutableArray);
 
 // "remove" the last element:
 mutableArray.pop();
+console.log(mutableArray);
+console.log([mutableArray.slice(0, 4), mutableArray.slice(5)].flat())
+console.log([mutableArray.slice(0, 4), mutableArray.slice(5)].flat().length)
+console.log(mutableArray);
+
+console.log(mutableArray[4]);
+console.log(mutableArray.length);
+delete mutableArray[4];
+console.log(mutableArray.length);
+console.log(mutableArray[4]);
 
 // add element (s) to the beginning:
-mutableArray.unshift( 'x', 'y' );
+mutableArray.unshift('x', 'y');
+console.log(mutableArray);
 
 // "remove" the first element:
 const first = mutableArray.shift();
@@ -58,6 +76,6 @@ console.log(first);
 console.log(mutableArray);
 
 // WARNING ! Array with elements of different types | ! -WE DO NOT PRACTICE THIS-! |
-const myBadArray = [ 1, 2, 'banana', 44, 55, 3, 'apple' ];
+const myBadArray = [1, 2, 'banana', 44, 55, 3, 'apple'];
 
 // although JS allows us to hold different types of elements in an Array, we don't want to do that.
