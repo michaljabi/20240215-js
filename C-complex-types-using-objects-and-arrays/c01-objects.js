@@ -1,7 +1,22 @@
+
 /**
 * JavaScript has the so-called object literals.
 * They allow you to create a given object -
 * without the need to define plans of its structure like in other object-oriented languages - which use classes.
+*/
+/* we will go back to classes
+class User {
+	name = 'Marek'
+}
+
+const myOtherUser = new User();
+
+console.log(myOtherUser);
+console.log(myOtherUser.name);
+
+myOtherUser.name = 'Kasia';
+
+console.log(myOtherUser.name);
 */
 
 // A simple example of an object:
