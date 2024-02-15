@@ -1,3 +1,4 @@
+
 /**
 * Functions can be declared with the so-called parameters.
 * These are the entries for the arguments (data) passed to the function.
@@ -25,30 +26,39 @@ function sumTwoNumbers(a, b) {
 // Call and assignment of the returned value from function:
 const result = sumTwoNumbers(10, 20)
 
+// sumTwoNumbers(10, 20) //=
+// sumTwoNumbers('a', 'b') //=
+
 
 // #1 Task:
 // Show the addition result of 10 + 20 on the screen
-
+console.log(result);
 
 // #2 Task:
 // Count how many is 30 + 560
-
+console.log(sumTwoNumbers(30, 560))
+sumTwoNumbers(30, 560) //=
+sumTwoNumbers(30, 560) //=
 
 // #3 Task:
 // What if we want to count 450 + 200 + 100?
+const partial = sumTwoNumbers(450, 200)
+console.log(sumTwoNumbers(partial, 100))
 
-
+// other way "less readable":
+sumTwoNumbers(sumTwoNumbers(450, 200), 100) //=
 
 /* ---------------------- */
 // Functions after 2015 may have default parameters:
 
-function greetings(user = 'Admin') {
+function greetings(user) {
 	console.log('Hello', user)
 }
 
 // #4 Task:
 // try to call greetings with arguments and no argument, what will happen?
-
+greetings()
+// greetings('Mike')
 
 // #5 Task:
 // After completing task #4, remove the default user value - what will happen?
