@@ -9,15 +9,15 @@
 */
 
 // first string:
-let helloWorld = 'Hello World'
+const helloWorld = 'Hello World'
 console.log(helloWorld, 'is:', typeof helloWorld)
 
 // then number:
-let myLuckyNumber = 12333
+const myLuckyNumber = 12333
 console.log(myLuckyNumber, 'is:', typeof myLuckyNumber)
 
 // then boolean:
-let myFlag = true
+const myFlag = true
 console.log(myFlag, 'is:', typeof myFlag)
 
 // then undefined:
