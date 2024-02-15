@@ -1,13 +1,22 @@
 
 const x = 2;
-const y = 3;
+const y = 4;
 
 // # 1 Task:
 // Show the result of adding x and y (expected: 5)
+console.log(x + y);
+
+// Special syntax for JS REPL extension
+x + y; //=
 
 // # 2 Task:
 // Show the result of the power of x to 3 (or x to y) (expected: 8)
-
+console.log(x * x * x);
+// solve #2:
+console.log(Math.pow(x, y))
+Math.pow(x, y) //=
+// solve #3:
+console.log(x ** y)
 
 //------------------------------------------------------------
 const hello = 'Hello';
