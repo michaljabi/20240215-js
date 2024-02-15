@@ -64,6 +64,7 @@ console.log(myVar);
 // DECLARE and ASSIGN a value.
 // And you will never be able to REASSIGN it again !!!
 let otherVar = 0;
+console.log(otherVar)
 
 // That will cause an error:
 otherVar = otherVar + 2;
