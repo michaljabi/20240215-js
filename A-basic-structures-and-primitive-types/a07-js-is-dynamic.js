@@ -5,7 +5,7 @@
 * A bad idea (habit) will be:
 *  "dynamic change of variable type"
 *
-* With the "typeof" keyword, you can easily see what a simple type variable is
+* With the "typeof" keyword, you can easily see what type of the primitive variable is
 */
 
 // first string:
@@ -13,16 +13,16 @@ let helloWorld = 'Hello World'
 console.log(helloWorld, 'is:', typeof helloWorld)
 
 // then number:
-helloWorld = 12333
-console.log(helloWorld, 'is:', typeof helloWorld)
+let myLuckyNumber = 12333
+console.log(myLuckyNumber, 'is:', typeof myLuckyNumber)
 
 // then boolean:
-helloWorld = true
-console.log(helloWorld, 'is:', typeof helloWorld)
+let myFlag = true
+console.log(myFlag, 'is:', typeof myFlag)
 
 // then undefined:
-helloWorld = undefined
-console.log(helloWorld, 'is:', typeof helloWorld)
+let myExample;
+console.log(myExample, 'is:', typeof myExample)
 
 // # 1 Task:
 // Refactor - change the above entries to the correct code
