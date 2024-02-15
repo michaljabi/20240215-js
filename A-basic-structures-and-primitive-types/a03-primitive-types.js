@@ -6,10 +6,12 @@
  * They are passed on by value and immutable.
  * Thanks to them, we can save basic information as a string, boolean, number etc.
  */
+console.log(45 * 80)
+console.log('abs' + 'def')
 
 // Primitives:
 console.log('example', '- is a string')
-console.log(1, '- is a number')
+console.log(1.3, '- is a number')
 console.log(1n, '- is a bigint')
 console.log(true, '- is a boolean')
 console.log(Symbol(), '- is a symbol')
@@ -24,7 +26,15 @@ const myString = 'My Sample Text';
 const myNumber = 123;
 
 // Boolean (two values: true or false)
-let myBoolean = true;
+let myBoolean = false;
+console.log(myBoolean);
+
+
+
+myBoolean = false;
+// myBoolean = 2;
+
+console.log(myBoolean);
 
 // Standard "checking what's happening" way - console.log:
 console.log(myString);

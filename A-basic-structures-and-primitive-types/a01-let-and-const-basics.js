@@ -63,10 +63,10 @@ console.log(myVar);
 // When you use "const" keyword, you MUST:
 // DECLARE and ASSIGN a value.
 // And you will never be able to REASSIGN it again !!!
-const otherVar = 300;
+let otherVar = 0;
 
 // That will cause an error:
-// otherVar = otherVar + 2;
+otherVar = otherVar + 2;
 
 // This too:
 // otherVar = 300;
