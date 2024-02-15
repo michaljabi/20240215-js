@@ -11,6 +11,40 @@ comment
 */
 
 console.log('Welcome in JS world', 100 + 4 * 5);
+console.log(80 + 20);
+
+const x = 1;
+let y = 1;
+
+
+
+
+
+
+y = '!'
+
+
+
+
+
+
+
+
+// x = x + 1;
+// x++;
+console.log(x);
+
+y = y + 1;
+y++;
+y += 1;
+console.log('>>> ', y)
+
+console.log(x + 1);
+console.log(x);
+console.log(x);
+console.log(x);
+console.log(x);
+console.log(x);
 
 /*
 
