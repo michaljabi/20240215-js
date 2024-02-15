@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website title</title>
+    <style>
+        button[data-btn-welcome] {
+            border: 1px solid black;
+            background-color: chocolate;
+            color: white;
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+<body>
+  <h1>Website title</h1>
+  <button data-btn-welcome>Welcome</button>
+  <script>
+
+      const $welcomeButton = document.querySelector('button[data-btn-welcome]');
+      $welcomeButton.addEventListener('click', () => {
+	      alert('Welcome on my page !');
+      });
+
+      $welcomeButton.addEventListener('mouseenter', () => {
+		 $welcomeButton.textContent += '!'
+      })
+      $welcomeButton.addEventListener('mouseleave', () => {
+          const currentText = $welcomeButton.textContent;
+	      $welcomeButton.textContent = currentText.slice(0, currentText.length-1);
+      })
+  </script>
+</body>
+</html>

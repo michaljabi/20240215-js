@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <div id="jqueryVersion">
+        <h1>Hello!</h1>
+    </div>
+    <hr>
+    <div id="vanillaVersion">
+        <h1>Hello!</h1>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // jQuery version code:
+        $( document ).ready( () => {
+
+            $('#jqueryVersion h1').html('Welcome to my page! [jQuery]');
+
+            const newButton = $('<button> Click Me </button>');
+            newButton.on('click', () => {
+                alert('Hello world!');
+            })
+            $('#jqueryVersion').append(newButton);
+        } )
+    </script>
+
+    <script>
+        // Vanilla version code:
+        document.querySelector('#vanillaVersion h1').innerHTML = 'Welcome to my page! [Vanilla]';
+
+        const vanillaButton = document.createElement('button');
+        vanillaButton.textContent = 'Click Me';
+        vanillaButton.addEventListener('click', () => {
+            alert('Hello world!');
+        })
+        document.querySelector('#vanillaVersion').appendChild(vanillaButton);
+    </script>
+</body>
+</html>

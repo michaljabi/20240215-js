@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "achil.vscode-javascript-repl",
+    "ritwickdey.LiveServer",
+    "vscode-icons-team.vscode-icons",
+    "eamodio.gitlens",
+    "dbaeumer.vscode-eslint",
+    "WallabyJs.quokka-vscode"
+  ]
+}
