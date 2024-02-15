@@ -1,3 +1,4 @@
+
 // First lets see once again what value parameter have, if no argument is provided:
 function shoutMyName(name) {
 	return 'Your name is: ' + name;
@@ -43,7 +44,7 @@ console.log(giveFavouriteNumber(987))
 // You cannot access to outer scope when your parameter name is the same as value from other scope:
 // We will discuss scopes later, but in general you can have access to outer value like that:
 
-const outer = 567;
+const outer = 66;
 
 function showOuter() {
 	 console.log(outer);
@@ -58,8 +59,10 @@ showOuter()
 // A kind of operation where you want to access the outer scope and use some value from, but it is IMPOSSIBLE
 // because your parameter name is the same as outer scope parameter:
 
-function shadowedValue(outer) {
+function shadowedValue(num) {
+	// let outer = 2; // that will also "shadows" outer scope (as long as it is using same name)
 	console.log(outer);
+	console.log(num);
 }
 
 shadowedValue(890);
