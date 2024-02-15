@@ -3,10 +3,26 @@
  * after being executed you can receive a value from the function.
  */
 
+let weather = 'windy'
+
 // Declaration:
 function giveMeTheName() {
 	// Function can return only one thing at a time:
-	return 'Kendra'
+	if(weather === 'windy') {
+		return 'Kend\nra\'s'
+	}
+	return {
+		name: 'John',
+		lastName: 'Smith',
+		address: {
+			village: 'Willoughby',
+			shireCounty: 'Lincolnshire',
+			house: {
+				no: 23
+			}
+		},
+		isRegistered: true
+	}
 }
 
 // giveMeTheName call + assign the return value to name:
