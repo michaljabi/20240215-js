@@ -24,7 +24,7 @@
 /*
 		The if...else if
 */
-let numericCondition = 0;
+let numericCondition = -1;
 
 if(numericCondition === 1) {
 	console.log('if !')

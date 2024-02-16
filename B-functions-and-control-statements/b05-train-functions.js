@@ -34,15 +34,26 @@ function sayHelloNoDefault(name) {
     // This is STILL to complicated !
     // You need to go back here - after b15, b16 and b17 and REFACTOR.
     // also adress the name == null problem.
-    if (name === undefined) {
+    // DONE IT!.
+    console.log(name);
+    if (!name  && name !== 0 ) {
         console.log('Hello Stranger')
     } else {
         console.log('Hello', name)
     }
 }
 
-// Refer to in future:
 console.log(!undefined)
+console.log(!true)
+console.log(!false)
 
 sayHelloNoDefault();
-sayHelloNoDefault('Monica');
+sayHelloNoDefault(undefined); // same as above (so dot do this)
+sayHelloNoDefault(null);
+
+// Antoher feature:
+sayHelloNoDefault('');
+
+// Sometimes programmer might need the 0 number ( && name !== 0 )
+sayHelloNoDefault(0);
+// sayHelloNoDefault('Monica');
