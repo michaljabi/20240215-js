@@ -1,6 +1,4 @@
-setTimeout(() => {
-    console.log('Say hello')
-}, 4000)
+setTimeout(() => { console.log('Say hello') }, 4000)
 
 
 function fireMeAfter2sec() {

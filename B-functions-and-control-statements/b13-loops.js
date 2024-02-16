@@ -10,12 +10,13 @@
  * */
 
 // while loop - rotates as long as the logical condition it checks - evaluates to: true
-let flag = true;
+let flag = false;
 while ( flag ) {
 	console.log('Hello once')
 	flag = false;
 }
 
+console.log(flag);
 // the do-while loop works very similarly, but we are sure that the logic contained in its block - will be executed at least once
 // in other words, "while" condition is only checked at the end of loop's rotation
 do {
