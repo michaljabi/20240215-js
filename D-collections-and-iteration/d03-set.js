@@ -11,6 +11,20 @@
   console.log( mySet );
 
   const mySetFromArray = new Set( [ 1, 1, 2, 3, 3, 4, 6, 8, 10, 190, 190 ] );
+  const mySetFromArray2 = new Set( [ {}, {} ] );
+
+  console.log(mySetFromArray);
+  console.log(mySetFromArray2);
+ 
+
+
+
+
+
+
+
+
+
 
   let iterator = mySetFromArray.values();
   console.log( iterator.next() );

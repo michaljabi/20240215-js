@@ -25,6 +25,7 @@
   console.log( myMap );
   console.log( myMap.get( 'non-existing' ) );
   console.log( myMap.get( 'hello' ) );
+  console.log( myMap.size );
 
   // You can build a new Map from the nested array,
   // Array of key, value pairs is nested inside of wrapping array:
