@@ -114,12 +114,36 @@ greetings(sayHello, sampleNumber)
 // Hmmm ... if a function accepts a function, it can also return it !?
 
 function welcome() {
-	return function() {
-		console.log('Welcome stranger')
-	}
+	// return function () {
+	// 	console.log('Welcome stranger')
+	// }
+	// return () => {
+	// 	console.log('Welcome stranger')
+	// }
+	return () => console.log('Welcome stranger')
 }
 
 // # 3 Task:
 // How to get and call "Welcome stranger" on the screen?
 
+/* // 1st solution
+const say = welcome();
+say();
+*/
+// 2nd solution
+welcome()();
 
+
+function makeValueObject() {
+	return {
+		value: 90
+	}
+}
+
+console.log(makeValueObject().value)
+
+const myObj = {
+	value: 90
+}
+
+console.log(myObj.value)
