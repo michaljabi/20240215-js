@@ -23,6 +23,8 @@ const newFunc3 = ( name ) => {
     return `Hello ${name}!`;
 };
 
+newFunc('Mike') //=
+
 // Reminder:
 // A function can return another function:
 function hello() {

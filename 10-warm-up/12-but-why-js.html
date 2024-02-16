@@ -48,7 +48,7 @@
         const insertPanel = document.querySelector('[data-insert-panel]');
         const fruitInput = document.querySelector('[data-fruit]');
 
-        fruitInput.addEventListener('keydown', (event) => {
+        fruitInput.addEventListener('keydown', event => {
             if(event.key === 'Enter') {
                addFruitToList(fruitInput.value);
             }

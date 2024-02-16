@@ -19,15 +19,34 @@ Why are functions so important?
 // there are 2 main ways to write a function inside JS
 // both of them are important to know and understand.
 
+// Call:
+iAmAFunctionDeclaration();
+
 // 1st - you already familiar with:
 /* FUNCTION DECLARATION (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function) */
 function iAmAFunctionDeclaration() {
 	return 'hello from Declaration';
 }
 
-// Call:
-iAmAFunctionDeclaration();
 
+
+// object checking:
+console.log({} instanceof Object);
+// proff of inheritance
+console.log([] instanceof Array);
+console.log([] instanceof Object);
+
+// another:
+console.log(new Date() instanceof Date)
+console.log(new Date() instanceof Object)
+
+// proff that function is an Object:
+console.log(iAmAFunctionDeclaration instanceof Function);
+console.log(iAmAFunctionDeclaration instanceof Object);
+
+// myObject;
+
+const myObject = {};
 
 // 2nd - looks just like we assign a value to a variable or constant!:
 /* FUNCTION EXPRESSION (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function) */
@@ -36,7 +55,7 @@ const iAmFunctionExpression = function() {
 }
 
 // Call looks the same, but we need a "reference" - so the variable or const, to call:
-iAmFunctionExpression();
+iAmFunctionExpression(); //=
 
 /*
 
@@ -80,6 +99,7 @@ const sayHello = function() {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 
 function greetings(sayHelloFn, luckyNumber) {
+	console.log(sayHelloFn)
 	sayHelloFn()
 	console.log('Your lucky number is', luckyNumber)
 }
