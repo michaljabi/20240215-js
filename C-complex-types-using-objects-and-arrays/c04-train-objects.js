@@ -7,6 +7,12 @@ tax (type: number)
 come up with sample values yourself
 */
 
+const shoppingCartItem = {
+	name: 'Computer',
+	price: 1000,
+	tax: 123
+}
+
 /* # 2 Task:
 Define and assign a shoppingCartItem2 object with the fields:
 	name (type: string)
@@ -18,6 +24,16 @@ come up with sample values yourself
 Show in console.log the sums of prices (price) and taxes (tax) of both products as the value of the basket
 */
 
+const shoppingCartItem2 = {
+	name: 'book',
+	price: 100,
+	tax: 8
+}
+
+
+const basketValue = shoppingCartItem.price + shoppingCartItem.tax + shoppingCartItem2.price + shoppingCartItem2.tax;
+
+console.log(basketValue);
 
 // # 3 Show that initializing two new empty objects after comparing === will give us false.
 // Even when they got the same properties and values (!!!)
