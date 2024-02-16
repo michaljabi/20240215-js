@@ -62,6 +62,8 @@ const superObject = {
 // serialization do JSON:
 const jsonData = JSON.stringify(superObject);
 
+console.log(jsonData);
+
 
 // deserialization:
 // const myReturnedObject = JSON.parse(jsonData)
