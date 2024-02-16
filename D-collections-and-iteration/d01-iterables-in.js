@@ -6,6 +6,8 @@
 
 const movie = 'Ender \' s Game ';
 
+movie[100] //=
+
 for (let x = 0; x < movie.length; x ++) {
 	console.log(movie[x])
 }
@@ -16,6 +18,10 @@ for (let x = 0; x < movie.length; x ++) {
  * */
 
 for (const letter of 'Fight Club') {
+	console.log(letter)
+}
+
+for (const letter of ['a', 'b']) {
 	console.log(letter)
 }
 

@@ -31,7 +31,8 @@
   iterator = mySetFromArray.values();
   console.log( iterator.next() );
 
-  for (const item of myMap.values()) {
+  // fixed with set:
+  for (const item of mySetFromArray) {
     console.log( item );
   }
 
