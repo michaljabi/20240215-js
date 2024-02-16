@@ -36,11 +36,14 @@ function sayHelloNoDefault(name) {
     // also adress the name == null problem.
     // DONE IT!.
     console.log(name);
-    if (!name  && name !== 0 ) {
-        console.log('Hello Stranger')
-    } else {
-        console.log('Hello', name)
-    }
+    // if (!name && name !== 0) {
+    //     console.log('Hello Stranger')
+    // } else {
+    //     console.log('Hello', name)
+    // }
+
+    const computedName = (!name && name !== 0) ? 'Stranger' : name;
+    console.log('Hello', computedName)
 }
 
 console.log(!undefined)
@@ -56,4 +59,4 @@ sayHelloNoDefault('');
 
 // Sometimes programmer might need the 0 number ( && name !== 0 )
 sayHelloNoDefault(0);
-// sayHelloNoDefault('Monica');
+sayHelloNoDefault('Monica');

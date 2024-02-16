@@ -37,23 +37,28 @@ if(numericCondition === 1) {
 /*
 		The ternary operator
 */
-const x = 100;
+const x = 10;
 const higherThen10 = x > 10;
-const hello = higherThen10 ? 'hello' : 'goodbye';
+const hello = x > 10 ? 'hello' : 'goodbye';
 
 
+console.log(hello)
 /*
 		Switch
 */
-switch(hello) {
-	case 'hello':
-		console.log('logic for hello...');
-		break;
-	case 'goodbye':
-		console.log('logic for goodbye...');
-		break;
-	default:
-		console.log('logic for unknown value')
+sayHello(hello);
+
+function sayHello(word) {
+	switch(word) {
+		case 'hello':
+			console.log('logic for hello...');
+			break;
+		case 'goodbye john':
+		case 'goodbye':
+			return console.log('logic for goodbye...');
+		default:
+			console.log('logic for unknown value')
+	}
 }
 
 
